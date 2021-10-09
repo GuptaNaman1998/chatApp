@@ -1,10 +1,10 @@
-const moment = require("moment");
+const d = new Date();
 
 const formatMsg = (username, msg) => {
   return {
     username: username,
     msg: msg,
-    time: moment.utc().local().format("h:mm a"),
+    time: d.toDateString(),
   };
 };
 
