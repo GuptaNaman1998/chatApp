@@ -4,7 +4,7 @@ const formatMsg = (username, msg) => {
   return {
     username: username,
     msg: msg,
-    time: d.toDateString(),
+    time: d.toLocaleTimeString(),
   };
 };
 
